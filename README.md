@@ -3,7 +3,7 @@
 >
 
 ## Demo
-<img src="demo.gif" width="200">
+<img src="demo.gif" width="250">
 
 ## Installation
 
