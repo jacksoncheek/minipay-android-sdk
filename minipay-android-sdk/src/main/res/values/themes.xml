@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Application Themes -->
+    <style name="MinipayAndroidSdk" />
+
+    <style name="MinipayAndroidSdk.Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Primary -->
+        <item name="colorPrimary">@color/sdk_azure</item>
+        <item name="colorPrimaryDark">@color/sdk_azure_dark</item>
+        <item name="colorAccent">@color/sdk_secondary</item>
+
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+
+        <item name="android:textViewStyle">@style/MinipayAndroidSdk.Text.Body</item>
+        <item name="android:buttonStyle">@style/MinipayAndroidSdk.Button</item>
+    </style>
+
+    <!-- TextView Styles -->
+    <style name="MinipayAndroidSdk.Text" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/sdk_text</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Body">
+        <item name="android:textSize">@dimen/sdk_default_textview_text_size</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Body.Bold">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Body.Light">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="fontFamily">@font/inter_light</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Small">
+        <item name="android:textSize">@dimen/sdk_default_textview_small_text_size</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Title">
+        <item name="android:textSize">@dimen/sdk_default_textview_title_text_size</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Title.Bold">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Title.Light">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="fontFamily">@font/inter_light</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Subtitle">
+        <item name="android:textSize">@dimen/sdk_default_textview_subtitle_text_size</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Subtitle.Bold">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Text.Subtitle.Light">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="fontFamily">@font/inter_light</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="MinipayAndroidSdk.EditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/sdk_text</item>
+        <item name="android:textColorHint">@color/sdk_text</item>
+        <item name="android:padding">@dimen/sdk_two</item>
+        <item name="android:background">@drawable/rounded_rectangle</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="MinipayAndroidSdk.Button" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/sdk_default_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/sdk_white</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:layout_height">@dimen/sdk_default_button_height</item>
+        <item name="android:elevation">@dimen/sdk_default_button_elevation</item>
+    </style>
+
+    <style name="MinipayAndroidSdk.Button.Light" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/sdk_default_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/sdk_white</item>
+        <item name="android:background">@drawable/rounded_button_light</item>
+        <item name="android:layout_height">@dimen/sdk_default_button_height</item>
+        <item name="android:elevation">@dimen/sdk_default_button_elevation</item>
+    </style>
+
+    <!-- ProgressBar Styles -->
+    <style name="MinipayAndroidSdk.ProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/sdk_secondary</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary -->
+    <color name="sdk_azure">#FF3A86FF</color>
+    <color name="sdk_azure_dark">#FF2E6BCC</color>
+    <color name="sdk_azure_light">#FF619EFF</color>
+
+    <!-- Text -->
+    <color name="sdk_text">#FFECECEC</color>
+    <color name="sdk_text_light">#FF17233A</color>
+
+    <!-- Secondary -->
+    <color name="sdk_secondary">#FFFF006E</color>
+
+    <!-- Background -->
+    <color name="sdk_background">#FF17233A</color>
+    <color name="sdk_card">#FF263859</color>
+
+    <!-- States -->
+    <color name="sdk_success">#FF23CE6B</color>
+    <color name="sdk_failure">#FFFF1654</color>
+    <color name="sdk_disabled">#FF4B5A73</color>
+    <color name="sdk_disabled_light">#FFDBDEE3</color>
+
+    <!-- Base -->
+    <color name="sdk_black">#FF000000</color>
+    <color name="sdk_white">#FFFFFFFF</color>
+
+</resources>

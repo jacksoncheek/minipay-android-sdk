@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Minipay Demo</string>
+    <string name="minipay_demo">Minipay Demo</string>
+    <string name="start_login_flow">Start Login Flow</string>
+    <string name="start_authorize_app_flow">Start Authorize App Flow</string>
+    <string name="start_post_usage_event_flow">Post Usage Event</string>
+</resources>
