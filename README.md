@@ -120,4 +120,4 @@ Please consult our [docs](https://minipayhq.com/docs) for more information.
 
 ## License
 
-The minipay-react package is available under the MIT license. See the LICENSE file for more info.
+The minipay-android-sdk package is available under the MIT license. See the LICENSE file for more info.
