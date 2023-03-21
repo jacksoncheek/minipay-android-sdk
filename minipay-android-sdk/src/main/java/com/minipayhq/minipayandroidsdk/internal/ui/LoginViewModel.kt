@@ -22,6 +22,8 @@ internal class LoginViewModel(
 
     var password: String = ""
 
+    var didComplete: Boolean = false
+
     val isLoginButtonEnabled: Boolean
         get() = email.isNotEmpty() && password.isNotEmpty()
 
@@ -41,6 +43,8 @@ internal class LoginViewModel(
                     completion(MinipaySdkResult.Failure(error = "Login failed"))
                     return
                 }
+
+                didComplete = true
 
                 completion(MinipaySdkResult.Success(result = body.token))
             }

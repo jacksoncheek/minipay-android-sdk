@@ -51,9 +51,11 @@ internal class LoginActivity : AppCompatActivity() {
         setBindings()
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        viewModel.callback(MinipaySdkResult.Failure(error = "User canceled"))
+    override fun onDestroy() {
+        if (!viewModel.didComplete) {
+            viewModel.callback(MinipaySdkResult.Failure(error = "User canceled"))
+        }
+        super.onDestroy()
     }
 
     private fun setBindings() {
