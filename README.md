@@ -21,7 +21,7 @@ Add the `minipay-android-sdk` library to your app's dependencies block and sync 
 
 ```
 dependencies {
-    implementation 'com.minipayhq:minipay-android-sdk:1.0.0'
+    implementation 'com.minipayhq:minipay-android-sdk:1.0.1'
 }
 ```
 
