@@ -11,8 +11,14 @@ class MinipaySdkBuilder {
 
     private var apiKey: String? = null
 
+    private var environment: MinipaySdkEnvironment? = null
+
     fun apiKey(apiKey: String) = apply {
         this.apiKey = apiKey
+    }
+
+    fun environment(mode: MinipaySdkEnvironment) = apply {
+        this.environment = mode
     }
 
     /** Builds the MinipaySdkImpl. */
@@ -22,12 +28,22 @@ class MinipaySdkBuilder {
             "`apiKey` cannot be null"
         }
 
+        requireNotNull(environment) {
+            "`environment` cannot be null"
+        }
+
+        val baseUrl = when (environment) {
+            MinipaySdkEnvironment.TEST -> "https://api.minipayhq.com/api/v1/"
+            MinipaySdkEnvironment.PRODUCTION -> "https://staging.minipayhq.com/api/v1/"
+            else -> "https://api.minipayhq.com/api/v1/"
+        }
+
         val okHttpClient = OkHttpClient.Builder()
             .addNetworkInterceptor(IoExceptionInterceptor())
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.minipayhq.com/api/v1/")
+            .baseUrl(baseUrl)
             .addConverterFactory(MoshiConverterFactory.create())
             .client(okHttpClient)
             .build()
